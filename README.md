@@ -20,7 +20,7 @@ dv("John Doe").equals("Jon Doe").errors;
 // [ 'ValueMismatched' ]
 
 dv("John Doe@example.com").isEmail().errors;
-// [ 'InValidEmail' ]
+// [ 'InvalidEmail' ]
 
 dv(5).isType("number").errors;
 // [] As 5 is a number, the error array is empty

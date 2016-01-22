@@ -1,6 +1,6 @@
 {
   "name": "darth-valider",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A node module for input validation",
   "main": "darth-valider.js",
   "scripts": {

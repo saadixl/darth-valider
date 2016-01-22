@@ -1,6 +1,6 @@
 # darth-valider
 
-## A simple NodeJS validation module
+A simple NodeJS validation module
 
 
 ## How to install

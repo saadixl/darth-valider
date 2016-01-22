@@ -1,7 +1,7 @@
 {
   "name": "darth-valider",
   "version": "0.1.0",
-  "description": "A node module for inout validation",
+  "description": "A node module for input validation",
   "main": "darth-valider.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

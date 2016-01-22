@@ -38,9 +38,9 @@ dv(5).equalsIgnoreCase("five").isType("string").errors;
 
 *isEmpty()*
 
-*isEquals(any)*
+*equals(any)*
 
-*isEqualsIgnoreCase(any)*
+*equalsIgnoreCase(any)*
 
 *isType(string)*
 

@@ -32,6 +32,15 @@ valider.prototype.isType = function(data) {
     return this;
 }
 
+// Checking if the value is email
+valider.prototype.isEmail = function() {
+    var emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!emailRegex.test(this.value)) {
+        this.errors.push("InValidEmail");
+    }
+    return this;
+}
+
 module.exports = function(input) {
     return new valider(input);
 };

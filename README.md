@@ -16,7 +16,7 @@ npm install darth-valider
 var dv = require('darth-valider');
 
 // Basic Examples
-dv("John Doe").isEquals("Jon Doe").errors;
+dv("John Doe").equals("Jon Doe").errors;
 // [ 'ValueMismatched' ]
 
 dv("John Doe@example.com").isEmail().errors;
@@ -27,7 +27,7 @@ dv(5).isType("number").errors;
 
 // Chained Examples
 
-dv(5).isEqualsIgnoreCase("five").isType("string").errors;
+dv(5).equalsIgnoreCase("five").isType("string").errors;
 // [ 'ValueMismatched', 'TypeMismatched' ]
 
 

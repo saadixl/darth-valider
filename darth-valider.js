@@ -14,7 +14,7 @@ valider.prototype.isEmpty = function() {
 }
 
 // Checking if two values are equal
-valider.prototype.isEquals = function(data) {
+valider.prototype.equals = function(data) {
     if (data !== this.value) {
         if (data.toString().toUpperCase() === this.value.toString().toUpperCase()) {
             this.errors.push("CaseMismatched");
@@ -26,7 +26,7 @@ valider.prototype.isEquals = function(data) {
 }
 
 // Checking if two values are equal if case is ignored
-valider.prototype.isEqualsIgnoreCase = function(data) {
+valider.prototype.equalsIgnoreCase = function(data) {
     if (data.toString().toUpperCase() !== this.value.toString().toUpperCase()) {
         this.errors.push("ValueMismatched");
     }

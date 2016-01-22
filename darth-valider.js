@@ -1,18 +1,18 @@
 function valider(value) {
     this.value = value;
-    this.error = [];
+    this.errors = [];
 }
 
 valider.prototype.isValue = function(data) {
     if (data !== this.value) {
-        this.error.push("ValueMismatched");
+        this.errors.push("ValueMismatched");
     }
     return this;
 }
 
 valider.prototype.isType = function(data) {
     if (data !== typeof(this.value)) {
-        this.error.push("TypeMismatched");
+        this.errors.push("TypeMismatched");
     }
     return this;
 }

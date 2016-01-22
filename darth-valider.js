@@ -11,7 +11,7 @@ valider.prototype.isValue = function(data) {
 }
 
 valider.prototype.isType = function(data) {
-    if (typeof(data) !== typeof(this.value)) {
+    if (data !== typeof(this.value)) {
         this.error.push("TypeMismatched");
     }
     return this;

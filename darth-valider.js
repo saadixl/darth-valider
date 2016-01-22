@@ -4,6 +4,15 @@ function valider(value) {
     this.errors = [];
 }
 
+// Checking if empty values
+
+valider.prototype.isEmpty = function() {
+    if (this.value.trim() == "") {
+        this.errors.push("EmptyField");
+    }
+    return this;
+}
+
 // Checking if two values are equal
 valider.prototype.isEquals = function(data) {
     if (data !== this.value) {

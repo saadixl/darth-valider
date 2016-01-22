@@ -1,4 +1,3 @@
 var valider = require('./darth-valider');
-
-valider.setValue("hello").isType(Number).isValue("Helio");
-
+var result = valider("hello").isValue("hello").isType(String).error;
+console.log(result[0] + ' ' + result[1]);

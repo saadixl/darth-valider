@@ -50,6 +50,40 @@ valider.prototype.isEmail = function() {
     return this;
 }
 
+// Checking minimum character
+valider.prototype.minLength = function(n){
+    if((this.value).toString().length<n){
+        this.errors.push("lessThanMinCharacters");
+    }
+    return this;
+}
+
+// Checking maximum character
+valider.prototype.maxLength = function(n){
+    if((this.value).toString().length>n){
+        this.errors.push("moreThanMaxCharacters");
+    }
+    return this;
+}
+
+// Checking minimum value
+valider.prototype.minValue = function(n){
+    if(parseInt(this.value)<n){
+        this.errors.push("lessThanMinValue");
+    }
+    return this;
+}
+
+// Checking maximum character
+valider.prototype.maxValue = function(n){
+    if(parseInt(this.value)>n){
+        this.errors.push("moreThanMaxValue");
+    }
+    return this;
+}
+
+
+// Exporting all these methods
 module.exports = function(input) {
     return new valider(input);
 };

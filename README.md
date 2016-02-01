@@ -45,3 +45,11 @@ dv(5).equalsIgnoreCase("five").isType("string").errors;
 *isType(string)*
 
 *isEmail()*
+
+*minLength(number)*
+
+*maxLength(number)*
+
+*minValue(number)*
+
+*maxValue(number)*

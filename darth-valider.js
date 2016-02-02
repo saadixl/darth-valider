@@ -83,6 +83,39 @@ valider.prototype.maxValue = function(n){
 }
 
 
+// Checking if uppercase
+valider.prototype.isUpper = function(){
+    if(this.value!==this.value.toUpperCase()){
+        this.errors.push("notUpperCase");
+    }
+    return this;
+}
+
+// Checking if lowercase
+valider.prototype.isLower = function(){
+    if(this.value!==this.value.toLowerCase()){
+        this.errors.push("notLowerCase");
+    }
+    return this;
+}
+
+// Checking if alphabet
+valider.prototype.isAlpha = function(){
+    if(!(/^[a-zA-Z()]+$/.test(this.value))){
+        this.errors.push("notAlphabet");
+    }
+    return this;
+}
+
+// Checking if alphanumeric
+valider.prototype.isAlphanumeric = function(){
+    if(!(/^[a-z0-9]+$/i.test(this.value))){
+        this.errors.push("notAlphanumeric");
+    }
+    return this;
+}
+
+
 // Exporting all these methods
 module.exports = function(input) {
     return new valider(input);

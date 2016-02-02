@@ -53,3 +53,11 @@ dv(5).equalsIgnoreCase("five").isType("string").errors;
 *minValue(number)*
 
 *maxValue(number)*
+
+*isUpper*
+
+*isLower*
+
+*isAlpha*
+
+*isAlphanumeric*
